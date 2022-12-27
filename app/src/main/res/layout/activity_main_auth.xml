@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imv_avatar_user"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:src="@drawable/default_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imv_avatar_user" />
+
+        <TextView
+            android:id="@+id/tv_email_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_user" />
+
+        <Button
+            android:id="@+id/btn_sign_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sign out"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email_user" />
+
+        <EditText
+            android:id="@+id/edt_full_name_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="update full name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_sign_out" />
+
+        <EditText
+            android:id="@+id/edt_email_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="update email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_full_name_user" />
+
+        <EditText
+            android:id="@+id/edt_password_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="update password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email_user" />
+
+        <Button
+            android:id="@+id/btn_update_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_password_user" />
+
+        <Button
+            android:id="@+id/btn_update_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_update_profile" />
+
+        <Button
+            android:id="@+id/btn_update_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_update_email" />
+
+        <Button
+            android:id="@+id/btn_verify_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="verify email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_update_password" />
+
+        <Button
+            android:id="@+id/btn_delete_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="delete user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_verify_email" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
