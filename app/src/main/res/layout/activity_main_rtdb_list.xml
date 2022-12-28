@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/edt_id_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_name_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_id_user" />
+
+    <Button
+        android:id="@+id/btn_push_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="push user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_name_user" />
+
+    <Button
+        android:id="@+id/btn_push_list_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="push list user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_push_user" />
+
+    <Button
+        android:id="@+id/btn_get_list_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get list user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_push_list_user" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_list_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_get_list_user" />
+
+    <Button
+        android:id="@+id/btn_get_list_user_ver_event_listener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get list user v2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rcv_list_user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
